@@ -1,0 +1,68 @@
+img {
+  width: 99%;
+  height: 44vh;
+}
+
+.cart-item {
+  margin: 50px;
+  margin-left: 72px;
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.navbar {
+  display: flex;
+}
+.navbar .home {
+  text-decoration: none;
+  color: white;
+}
+.navbar .about {
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+}
+.navbar .contact {
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.avatar {
+  background-color: blue;
+  align-items: center;
+  margin-left: 117px;
+  color: white;
+}
+
+.addpost {
+  text-decoration: none;
+  margin-right: 246px;
+}
+
+.addpost a {
+  text-decoration: none;
+}
+
+.textarea {
+  width: 10px;
+}
+
+.background {
+  background-color: rgb(244, 246, 247);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.icon {
+  margin-right: 88%;
+  margin-top: 40px;
+  color: blue;
+}
+
+.form {
+  margin-top: -45px;
+}/*# sourceMappingURL=homepage.css.map */

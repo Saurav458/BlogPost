@@ -1,0 +1,54 @@
+$mainBack: rgb(0, 0, 0, 0.7);
+$whiteColor: white;
+$greyColor: grey;
+$blackColor: black;
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+.login-flex {
+    @include size(100%,100% );
+    background-color: $mainBack;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.responsecontent {
+    @include size(400px,200px );
+    background-color: $whiteColor;
+    border-radius: 4px;
+    text-align: center;
+    color: $greyColor;
+    position: relative;
+    margin: {
+        top: 40px;
+    };
+    border: {
+        radius: 4px;
+    };
+}
+
+.responsecontent h3 {
+    margin: {
+        top: 20px;
+    };
+    font: {
+        size: 20px;
+    };
+    color: $blackColor;
+}
+
+#removebtn {
+    padding: 10px;
+    width: 50px;
+    border: none;
+    background-color:blue;
+    color: $whiteColor;
+    margin: {
+        top: 10px;
+    };
+}

@@ -1,0 +1,95 @@
+$homeBackground: #D5D8DC;
+$orangeColor:#DC7633;
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.mainView {
+    background:$homeBackground ;
+    @include size(100vw, 100vh);
+    .headView {
+        display: flex;
+
+        .backArrow {
+            img {
+                @include size(20px, 20px);
+
+                margin: {
+                    top: 45px;
+                    left: 20px;
+                }
+                color: blue
+
+                ;
+            }
+        }
+
+        .title {
+            @include size(600px, 200px);
+
+            margin: {
+                left: 100px;
+                top: -25px
+            }
+
+            ;
+
+            p {
+                font: {
+                    size: 50px;
+                    weight: 900;
+                }
+
+                ;
+            }
+        }
+    }
+
+    .bodyView {
+        display: flex;
+
+        margin: {
+            top: -20px;
+        }
+
+        ;
+
+        .imgView {
+            margin: {
+                left: 100px;
+            }
+
+            ;
+            @include size(400px, 400px);
+
+            img {
+                @include size(600px, 400px)
+            }
+        }
+
+        .descView {
+            @include size(500px, 400px);
+
+            margin: {
+                left: 30ch;
+                top: 10px;
+            }
+
+            ;
+
+            p {
+                font: {
+                    size: 25px;
+                    weight: 700;
+                }
+            }
+            h4{
+                margin: {
+                    left: 25rem
+                };
+                color: $orangeColor;
+            }
+        }
+    }
+}
